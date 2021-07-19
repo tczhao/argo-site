@@ -15,7 +15,43 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs13" />
+     id="defs13">
+    <filter
+       inkscape:label="Light Eraser"
+       style="color-interpolation-filters:sRGB;"
+       id="filter579"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 367.601 0 "
+         result="colormatrix"
+         id="feColorMatrix575" />
+      <feComposite
+         in2="colormatrix"
+         operator="arithmetic"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite577" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix599" />
+      <feColorMatrix
+         id="feColorMatrix601"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 367.601 0 "
+         result="colormatrix"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="colormatrix"
+         id="feComposite603"
+         operator="arithmetic"
+         k2="1"
+         result="composite" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="namedview11"
      pagecolor="#ffffff"
@@ -30,8 +66,8 @@
      inkscape:cy="14.855384"
      inkscape:window-width="1482"
      inkscape:window-height="1091"
-     inkscape:window-x="105"
-     inkscape:window-y="136"
+     inkscape:window-x="15"
+     inkscape:window-y="179"
      inkscape:window-maximized="0"
      inkscape:current-layer="g15" />
   <g
@@ -42,7 +78,7 @@
        width="113.6"
        height="29.6"
        preserveAspectRatio="none"
-       style="image-rendering:optimizeQuality"
+       style="image-rendering:optimizeQuality;filter:url(#filter579)"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAAAlCAYAAACUJtElAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAABVMSURBVHhe7VwHfFRV9v4mk0x6JYGA9F4UEKVI
 kypSRJogoCu7sCjFlaUpTRRQEQHFVVFYBQRE6QiIIL2FLoLSO6QXQkifmcz/nPPuS2YykxB0f/7M
